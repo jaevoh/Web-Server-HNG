@@ -32,7 +32,7 @@ def get_location(client_ip):
     except Exception as e:
         return "Unknown"
 
-@app.get("/api/hello")
+@app.get("/hello")
 async def hello(request: Request, visitor_name: str):
     client_ip = request.client.host
 
